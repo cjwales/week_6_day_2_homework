@@ -1,3 +1,4 @@
+// const Room = require('./room.js')
 const Decorator = function () {
   this.stock = [];
 }
@@ -12,6 +13,22 @@ Decorator.prototype.calculatePaintTotal = function () {
     total += this.stock[i].litres
   }
   return total
+};
+
+Decorator.prototype.checkTotal = function (area) {
+  paintTotal = this.calculatePaintTotal()
+  if (paintTotal >= area) {
+    return true
+  }
+  else {
+    return false
+  }
+};
+
+Decorator.prototype.paintRoom = function (area) {
+  if (this.checkTotal(area)) {
+    room.paint();
+  }
 };
 
 
