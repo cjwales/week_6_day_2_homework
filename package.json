@@ -1,0 +1,14 @@
+{
+  "name": "specs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "decorator_spec.js",
+  "scripts": {
+    "test": "mocha models/specs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.1"
+  }
+}
